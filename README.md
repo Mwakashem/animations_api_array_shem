@@ -9,6 +9,13 @@ Cd into the project
 Run pub get
 Run the project
 
+## What i achieved
+-Animations
+-Form Save and Validation
+-Bottom Navigation Bar
+- Todos Api
+
+
 ## About the project
 A project with bottom navigation bar and item: Design,Response, Info,Dictionary.
 Few animations in the splash screen.
