@@ -18,7 +18,7 @@ Run the project
 
 ## About the project
 A project with bottom navigation bar and item: Design,Response, Info,Dictionary.
-Few animations in the splash screen.
+Few animations in the splash screen. The project includes a page that maps and sorts a dictory & diplays the result
 Used diffrent packages.
 
 For help getting started with Flutter, view our
