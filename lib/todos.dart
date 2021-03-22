@@ -18,7 +18,7 @@ class Data {
   final int userId;
   final int id;
   final String title;
-  final String completed;
+  final bool completed;
 
   Data({this.userId, this.id, this.title, this.completed});
 
@@ -59,6 +59,7 @@ class _TodosState extends State<Todos> {
 
   Center buildCenter() {
     return Center(
+      // Text(data[index].title)
         child: FutureBuilder <List<Data>>(
           future: futureData,
           builder: (context, snapshot) {
@@ -66,13 +67,13 @@ class _TodosState extends State<Todos> {
               List<Data> data = snapshot.data;
               return 
               ListView.builder(
-              itemCount: data.length,
+              itemCount: 5,
               itemBuilder: (BuildContext context, int index) {
-                return Container(
-                  height: 75,
+                return Card(
                   color: Colors.white,
                   child: Center(child: Text(data[index].title),
-                ),);
+                ),
+                );
               }
             );
             } else if (snapshot.hasError) {

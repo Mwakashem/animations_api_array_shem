@@ -3,7 +3,6 @@ import 'package:animations_api_array_shem/todos.dart';
 import 'package:flutter/material.dart';
 import 'package:validators/validators.dart' as validator;
 import 'fade_animation.dart';
-import 'loginpage.dart';
 import 'model.dart';
 
 // void main() => runApp(Profile());
@@ -18,8 +17,6 @@ class _Profile extends State<Profile> {
   final tabs = [
     TestForm(),
     Todos(),
-    LoginPage(),
-    LoginPage(),
       ];
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -31,7 +28,7 @@ class _Profile extends State<Profile> {
         // backgroundColor: Color.fromRGBO(255, 140, 0, 1),
         appBar: AppBar(
           backgroundColor: Color.fromRGBO(255, 140, 0, 1),
-          title: Center(child: Text('Profile Create')),
+          title: Center(child: Text('Interview Test')),
           
         ),
         body: tabs[_currentIndex],
@@ -44,11 +41,11 @@ class _Profile extends State<Profile> {
           ),
           BottomNavigationBarItem(icon: Icon(Icons.design_services),
           backgroundColor: Colors.orangeAccent,
-          title: Text('Design')
+          title: Text('Response')
           ),
           BottomNavigationBarItem(icon: Icon(Icons.repeat_rounded),
           backgroundColor: Colors.orangeAccent,
-          title: Text('Response')
+          title: Text('Design')
           ),
           BottomNavigationBarItem(icon: Icon(Icons.menu_rounded),
           backgroundColor: Colors.orangeAccent,
